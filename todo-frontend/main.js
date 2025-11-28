@@ -7,7 +7,7 @@ const add = async () => {
     title: input.value,
   };
   console.log("The title is ",data.title);
-  if(data.title.trim() === "" || isNaN(Number(data.title.trim()))) {
+  if(data.title.trim() === "") {
         alert("Enter a proper name")
         input.value = ""
         return 
